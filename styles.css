@@ -7,8 +7,8 @@ body {
 }
 
 body.light-mode {
-    background-color: #f8f9fa;
-    color: #212529;
+    background-color: #ffffff;
+    color: #24292f;
 }
 
 .sidebar {
@@ -26,8 +26,9 @@ body.light-mode {
 }
 
 body.light-mode .sidebar {
-    background-color: #ffffff;
+    background-color: #f6f8fa;
     color: #000000;
+    border-right: 1px solid #d0d7de;
 }
 
 .sidebar a {
@@ -40,8 +41,26 @@ body.light-mode .sidebar {
     transition: background 0.2s;
 }
 
+body.light-mode .sidebar a {
+    color: #0969da;
+}
+
 .sidebar a:hover {
     background-color: #2a2a4a;
+}
+
+body.light-mode .sidebar a:hover {
+    background-color: #d0ebff;
+}
+
+#toggleTheme {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+body.light-mode #toggleTheme {
+    color: #24292f;
+    border-color: #24292f;
 }
 
 .content {
@@ -57,7 +76,8 @@ h2 {
 }
 
 body.light-mode h2 {
-    color: #000;
+    color: #1f2328;
+    border-color: #d8dee4;
 }
 
 .screenshot,
@@ -69,10 +89,17 @@ body.light-mode h2 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+body.light-mode .screenshot,
+body.light-mode .tip {
+    background-color: #f6f8fa;
+    border: 1px solid #d0d7de;
+    color: #24292f;
+}
+
 .tip:hover,
 .screenshot:hover {
     transform: scale(1.02);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .glow {

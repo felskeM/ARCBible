@@ -13,7 +13,6 @@
 <body>
     <div class="sidebar">
         <h4>Table of Contents</h4>
-        <input type="text" id="searchBox" class="form-control mb-3" placeholder="Search sections...">
         <a href="#intro">1. Intro to NetSuite</a>
         <a href="#rfi">2. RFI Orders</a>
         <a href="#afm">3. AFM Orders</a>
@@ -24,20 +23,15 @@
     </div>
 
     <div class="content">
-        <div class="mb-4">
-            <label for="uploadScreenshot" class="form-label">Upload Screenshot:</label>
-            <input type="file" accept="image/*" id="uploadScreenshot" class="form-control">
-            <img id="previewScreenshot" class="img-fluid mt-2 d-none" />
-        </div>
-
         <button class="toggle-section btn btn-secondary mb-2">Toggle Section 1</button>
-        <section id="intro" class="collapsible">
+        <section id="intro" class="collapsible open">
             <h2>1. Intro to NetSuite</h2>
             <p>Welcome to this tutorial. This guide will walk you through the necessary steps to complete the task at hand.</p>
+            <div class="screenshot">[Insert Screenshot Here]</div>
         </section>
 
         <button class="toggle-section btn btn-secondary mb-2">Toggle Section 2</button>
-        <section id="rfi" class="collapsible">
+        <section id="rfi" class="collapsible open">
             <h2>2. Entering RFI (Flooring Inc.) Orders</h2>
             <p>Begin by opening the application. Then follow the instructions below:</p>
             <div class="screenshot">[Insert Screenshot Here]</div>
@@ -45,7 +39,7 @@
         </section>
 
         <button class="toggle-section btn btn-secondary mb-2">Toggle Section 3</button>
-        <section id="afm" class="collapsible">
+        <section id="afm" class="collapsible open">
             <h2>3. Entering AFM (American Floor Mats) Orders</h2>
             <p>Next, configure your settings as shown below. Ensure all fields are correctly filled in before proceeding.</p>
             <div class="screenshot">[Insert Screenshot Here]</div>
@@ -53,21 +47,24 @@
         </section>
 
         <button class="toggle-section btn btn-secondary mb-2">Toggle Section 4</button>
-        <section id="other-orders" class="collapsible">
+        <section id="other-orders" class="collapsible open">
             <h2>4. Entering Other Customer Orders</h2>
             <div class="tip">💡 Tip: Use keyboard shortcuts to speed up your workflow!</div>
+            <div class="screenshot">[Insert Screenshot Here]</div>
         </section>
 
         <button class="toggle-section btn btn-secondary mb-2">Toggle Section 5</button>
-        <section id="tips" class="collapsible">
+        <section id="tips" class="collapsible open">
             <h2>5. Tips and Tricks</h2>
             <div class="tip">💡 Tip: Use keyboard shortcuts to speed up your workflow!</div>
+            <div class="screenshot">[Insert Screenshot Here]</div>
         </section>
 
         <button class="toggle-section btn btn-secondary mb-2">Toggle Section 6</button>
-        <section id="misc" class="collapsible">
+        <section id="misc" class="collapsible open">
             <h2>6. Other Miscellaneous, Useful Information</h2>
             <div class="tip">💡 Tip: Use keyboard shortcuts to speed up your workflow!</div>
+            <div class="screenshot">[Insert Screenshot Here]</div>
         </section>
     </div>
 

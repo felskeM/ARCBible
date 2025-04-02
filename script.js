@@ -38,31 +38,6 @@ toggles.forEach((btn, idx) => {
     });
 });
 
-// Screenshot upload preview
-const screenshotInput = document.getElementById("uploadScreenshot");
-const previewImage = document.getElementById("previewScreenshot");
-if (screenshotInput && previewImage) {
-    screenshotInput.addEventListener("change", function() {
-        const reader = new FileReader();
-        reader.onload = e => {
-            previewImage.src = e.target.result;
-            previewImage.classList.remove("d-none");
-        };
-        if (this.files[0]) {
-            reader.readAsDataURL(this.files[0]);
-        }
-    });
-}
-
-// Search filter
-document.getElementById("searchBox").addEventListener("input", function() {
-    const term = this.value.toLowerCase();
-    document.querySelectorAll("section").forEach(section => {
-        const visible = section.innerText.toLowerCase().includes(term);
-        section.style.display = visible ? "block" : "none";
-    });
-});
-
 // Keyboard shortcut navigation
 document.addEventListener("keydown", e => {
     if (e.key >= 1 && e.key <= 6) {
@@ -74,6 +49,9 @@ document.addEventListener("keydown", e => {
 });
 
 // Theme toggle
-document.getElementById("toggleTheme").addEventListener("click", () => {
-    document.body.classList.toggle("light-mode");
-});
+const themeBtn = document.getElementById("toggleTheme");
+if (themeBtn) {
+    themeBtn.addEventListener("click", () => {
+        document.body.classList.toggle("light-mode");
+    });
+}
