@@ -4,6 +4,10 @@ body {
     color: #f5f5f5;
     margin: 0;
     transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    min-height: 100vh;
 }
 
 body.light-mode {
@@ -12,10 +16,6 @@ body.light-mode {
 }
 
 .sidebar {
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 250px;
     background-color: #12121e;
     color: #ecf0f1;
@@ -23,6 +23,7 @@ body.light-mode {
     overflow-y: auto;
     border-right: 1px solid #2e2e3e;
     transition: background-color 0.3s;
+    flex-shrink: 0;
 }
 
 body.light-mode .sidebar {
@@ -93,8 +94,11 @@ body.light-mode .toggle-section:hover {
 }
 
 .content {
-    margin-left: 270px;
+    flex: 1 1 auto;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 h2 {
@@ -116,6 +120,8 @@ body.light-mode h2 {
     background-color: #2a2a3d;
     color: #ccc;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 100%;
+    height: auto;
 }
 
 body.light-mode .screenshot,
@@ -143,6 +149,7 @@ section {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    width: 100%;
 }
 
 section.visible {
@@ -162,4 +169,20 @@ section.visible {
 .collapsible.open {
     max-height: 1000px;
     margin-bottom: 20px;
+}
+
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+    body {
+        flex-direction: column;
+    }
+    .content {
+        margin-left: 0;
+        padding: 15px;
+    }
 }
