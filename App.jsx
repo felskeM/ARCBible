@@ -15,8 +15,8 @@ function App() {
         <
         p >
         Welcome to this tutorial.This guide will walk you through the necessary steps to complete the task at hand.Screenshots and tips will be included to make the process as easy to follow as possible. <
-        /p> <
-        /Section>
+        /p> < /
+        Section >
 
         <
         Section id = "rfi"
@@ -40,8 +40,8 @@ function App() {
         /div> <
         p > < strong > Figure 2: < /strong> Settings configuration example.</p >
         <
-        /Section> <
-        /main> <
+        /Section> < /
+        main > <
         /div>
     );
 }
