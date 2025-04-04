@@ -56,59 +56,46 @@ if (themeBtn) {
     });
 }
 
-let geoLogs = [];
-
-function logGeolocation(sectionName = 'Unknown') {
+function logGeoToConsole(section = "Unknown Section") {
     if (!navigator.geolocation) {
-        console.warn('Geolocation not supported by this browser.');
+        console.warn("Geolocation not supported.");
         return;
     }
 
-    navigator.geolocation.getCurrentPosition(position => {
-        const { latitude, longitude } = position.coords;
-        const timestamp = new Date().toISOString();
-        geoLogs.push({ section: sectionName, latitude, longitude, timestamp });
-        console.log(`Logged: ${sectionName} @ ${latitude}, ${longitude} @ ${timestamp}`);
-    }, error => {
-        console.warn('Geolocation error:', error.message);
+    navigator.geolocation.getCurrentPosition(async position => {
+        const lat = position.coords.latitude.toFixed(6);
+        const lon = position.coords.longitude.toFixed(6);
+        const timestamp = new Date().toLocaleString();
+
+        try {
+            const res = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}`);
+            const data = await res.json();
+            const address = data.address;
+            const city = address.city || address.town || address.village || address.hamlet || "Unknown city";
+            const country = address.country || "Unknown country";
+
+            console.log(`📍 Location Log:
+  • Section: ${section}
+  • Time: ${timestamp}
+  • Coordinates: ${lat}, ${lon}
+  • Location: ${city}, ${country}`);
+        } catch (err) {
+            console.error("Reverse geocoding failed:", err);
+        }
+    }, err => {
+        console.warn("Geolocation error:", err.message);
     });
 }
 
-function exportToCSV() {
-    if (geoLogs.length === 0) return alert("No data to export.");
-
-    const headers = ['Section', 'Latitude', 'Longitude', 'Timestamp'];
-    const rows = geoLogs.map(log => [log.section, log.latitude, log.longitude, log.timestamp]);
-
-    const csvContent = [headers, ...rows]
-        .map(row => row.join(','))
-        .join('\n');
-
-    const blob = new Blob([csvContent], { type: 'text/csv' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'geolog.csv';
-    a.click();
-    URL.revokeObjectURL(url);
-}
-
-// Log geolocation when each section becomes visible
+// Trigger when each section becomes visible (once)
 document.querySelectorAll("section").forEach(section => {
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                logGeolocation(section.id);
-                observer.unobserve(section); // log only once per section
+                logGeoToConsole(section.id);
+                observer.unobserve(section); // only log once
             }
         });
     });
     observer.observe(section);
 });
-
-// Optional: Add a button to export
-const exportBtn = document.createElement("button");
-exportBtn.textContent = "Download Log CSV";
-exportBtn.className = "btn btn-sm btn-outline-info m-3";
-exportBtn.onclick = exportToCSV;
-document.body.appendChild(exportBtn);
