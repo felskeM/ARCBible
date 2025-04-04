@@ -56,7 +56,7 @@ if (themeBtn) {
     });
 }
 
-function logGeoToConsole(section = "Unknown Section") {
+window.addEventListener("load", () => {
     if (!navigator.geolocation) {
         console.warn("Geolocation not supported.");
         return;
@@ -74,8 +74,7 @@ function logGeoToConsole(section = "Unknown Section") {
             const city = address.city || address.town || address.village || address.hamlet || "Unknown city";
             const country = address.country || "Unknown country";
 
-            console.log(`📍 Location Log:
-  • Section: ${section}
+            console.log(`📍 User Entry Log:
   • Time: ${timestamp}
   • Coordinates: ${lat}, ${lon}
   • Location: ${city}, ${country}`);
@@ -85,17 +84,4 @@ function logGeoToConsole(section = "Unknown Section") {
     }, err => {
         console.warn("Geolocation error:", err.message);
     });
-}
-
-// Trigger when each section becomes visible (once)
-document.querySelectorAll("section").forEach(section => {
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                logGeoToConsole(section.id);
-                observer.unobserve(section); // only log once
-            }
-        });
-    });
-    observer.observe(section);
 });
