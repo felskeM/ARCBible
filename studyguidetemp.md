@@ -4,7 +4,7 @@
 ## Mod 1: Intro to Security
 - **Security:** *[definition goes here]*
 - **CIA TRIAD:**
-  - **Confidentiality:** *[definition goes here]*
+  - **Confidentiality:** *[definition goes here]*  
   - **Integrity:** *[definition goes here]*
   - **Availability:** *[definition goes here]*
 - **Threat Actors:**
