@@ -37,62 +37,147 @@
 
 ## Mod 3: Threats and Attacks on Endpoints
 - **Malware Categories:** (Imprison, Launch, Snoop, Deceive, Evade)
-  - **Ransomware / Cryptomalware**
-  - **Fileless Virus**
-  - **Botnet / Worm**
-  - **Rootkit / Logic Bomb / Trojan / RAT**
+  - **Ransomware:** *[definition goes here]*
+  - **Cryptomalware:** *[definition goes here]*
+  - **Fileless Virus:** *[definition goes here]*
+  - **Botnet:** *[definition goes here]*
+  - **Worm:** *[definition goes here]*
+  - **Rootkit:** *[definition goes here]*
+  - **Logic Bomb:** *[definition goes here]*
+  - **Trojan:** *[definition goes here]*
+  - **RAT:** *[definition goes here]*
 - **Application Attacks:**
-  - **XSS / SQL Injection / CSRF / SSRF / Replay**
+  - **XSS:** *[definition goes here]*
+  - **SQL Injection:** *[definition goes here]*
+  - **CSRF:** *[definition goes here]*
+  - **SSRF:** *[definition goes here]*
+  - **Replay:** *[definition goes here]*
 - **Memory Vulnerabilities:**
-  - **Buffer Overflow / Integer Overflow**
+  - **Buffer Overflow / Integer Overflow** *[definition goes here]*
 - **Adversarial AI:** *[definition goes here]*
 
 ## Mod 4: Endpoint and Application Development Security
 - **Threat Intelligence:** (IOC / KRI / OSINT / STIX / TAXII)
 - **Endpoint Security Tools:**
-  - **UEFI / HIDS / HIPS / EDR**
+  - **UEFI:** *[definition goes here]*
+  - **HIDS:** *[definition goes here]*
+  - **HIPS:** *[definition goes here]*
+  - **EDR:** *[definition goes here]*
 - **Hardening Techniques:**
-  - **Least Functionality / Whitelisting / Sandboxing**
+  - **Least Functionality:** *[definition goes here]*
+  - **Whitelisting:** *[definition goes here]*
+  - **Sandboxing:** *[definition goes here]*
 - **SecDevOps & Coding:**
-  - **Static Analysis / Dynamic Analysis / Fuzzing / Secure Coding**
+  - **Static Analysis:** *[definition goes here]*
+  - **Dynamic Analysis:** *[definition goes here]*
+  - **Fuzzing:** *[definition goes here]*
+  - **Secure Coding:** *[definition goes here]*
 - **Patch Management:** *[definition goes here]*
 
 ## Mod 5: Mobile, Embedded, and Specialized Device Security
-- **Mobile Device Types / Connectivity / Deployment Models (BYOD, COPE, CYOD, VDI)**
-- **Mobile Risks:** (Jailbreaking, Rooting, Sideloading, QR Codes, GPS)
-- **Security Tools:** (MDM, MAM, UEM)
+- **Mobile Device Types:** *[definition goes here]*
+- **Connectivity:** *[definition goes here]*
+- **Deployent Models:**
+  - **BYOD:** *[definition goes here]*
+  - **COPE:** *[definition goes here]*
+  - **CYOD:** *[definition goes here]*
+  - **VDI:** *[definition goes here]*
+- **Mobile Risks:**
+  - **Jailbreaking/Rooting:** *[definition goes here]*
+  - **Sidloading:** *[definition goes here]*
+  - **QR Codes:** *[definition goes here]*
+  - **GPS:** *[definition goes here]*
+- **Security Tools:**
+  - **MDM:** *[definition goes here]*
+  - **MAM:** *[definition goes here]*
+  - **UEM:** *[definition goes here]*
 - **Embedded & IoT Devices:**
-  - **SCADA / ICS / HVAC / Drones / RTOS / SoC / FPGA**
+  - **SCADA:** *[definition goes here]*
+  - **ICS:** *[definition goes here]*
+  - **HVAC:** *[definition goes here]*
+  - **Drones:** *[definition goes here]*
+  - **SoC:** *[definition goes here]*
+  - **FPGA:** *[definition goes here]*
 
 ## Mod 6: Basic Cryptography
 - **Cryptography:** *[definition goes here]*
-- **Encryption / Decryption / Plaintext / Ciphertext**
-- **Steganography / Obfuscation / Nonrepudiation**
+- **Encryption:** *[definition goes here]*
+- **Decryption:** *[definition goes here]*
+- **Plaintext:** *[definition goes here]*
+- **Ciphertext:** *[definition goes here]*
+- **Steganography:** *[definition goes here]*
+- **Obfuscation:** *[definition goes here]*
+- **Nonrepudation:** *[definition goes here]*
 - **Hashing Algorithms:**
-  - **SHA / MD5 / RIPEMD**
+  - **SHA:** *[definition goes here]*
+  - **MDS:** *[definition goes here]*
+  - **RIPEMD:** *[definition goes here]*
 - **Symmetric Algorithms:**
-  - **AES / DES / 3DES / RC / Blowfish**
+  - **AES:** *[definition goes here]*
+  - **DES:** *[definition goes here]*
+  - **3DES:** *[definition goes here]*
+  - **RC:** *[definition goes here]*
+  - **Blowfish:** *[definition goes here]*
 - **Asymmetric Algorithms:**
-  - **RSA / ECC / DSA / DH / ECDH / DHE**
-- **Digital Signature / Key Exchange**
+  - **RSA:** *[definition goes here]*
+  - **ECC:** *[definition goes here]*
+  - **DSA:** *[definition goes here]*
+  - **DH:** *[definition goes here]*
+  - **ECDH:** *[definition goes here]*
+  - **DHE:** *[definition goes here]*
+- **Digital Signature / Key Exchange:** *[definition goes here]*
 - **Cryptographic Attacks:**
-  - **Collision / Birthday Attack / Downgrade Attack**
+  - **Collision:** *[definition goes here]*
+  - **Birthday Attack:** *[definition goes here]*
+  - **Downgrade Attack:** *[definition goes here]*
 - **Quantum Cryptography:** *[definition goes here]*
 - **Software vs Hardware Encryption:**
-  - **BitLocker / EFS / TPM / HSM / SEDs**
+  - **BitLocker:** *[definition goes here]*
+  - **EFS:** *[definition goes here]*
+  - **TPM:** *[definition goes here]*
+  - **HSM:** *[definition goes here]*
+  - **SEDs:** *[definition goes here]*
 - **Blockchain:** *[definition goes here]*
 
 ## Mod 7: PKI and Cryptographic Protocols
 - **Digital Certificates:**
-  - **CSR / CA / CRL / OCSP / Stapling / Chaining**
+  - **CSR:** *[definition goes here]*
+  - **CA:** *[definition goes here]*
+  - **CRL:** *[definition goes here]*
+  - **OCSP:** *[definition goes here]*
+  - **Stapling:** *[definition goes here]*
+  - **Chaining:** *[definition goes here]*
 - **PKI Trust Models:**
-  - **Hierarchical / Distributed / Bridge**
+  - **Hierarchical:** *[definition goes here]*
+  - **Distributed:** *[definition goes here]*
+  - **Bridge:** *[definition goes here]*
 - **Certificate Types:**
-  - **Root / Intermediate / Domain (DV, EV, Wildcard) / SAN**
+  - **Root:** *[definition goes here]*
+  - **Intermediate:** *[definition goes here]*
+  - **Domain:** *[definition goes here]*
+    - **DV:** *[definition goes here]*
+    - **EV:** *[definition goes here]*
+    - **Wildcard:** *[definition goes here]*
+  - **SAN:** *[definition goes here]*
 - **Key Management:**
-  - **Key Escrow / Expiration / Renewal / Destruction**
+  - **Key Escrow:** *[definition goes here]*
+  - **Expiration:** *[definition goes here]*
+  - **Renewal:** *[definition goes here]*
+  - **Destruction:** *[definition goes here]*
 - **Protocols:**
-  - **SSL / TLS / HTTPS / SSH / S/MIME / SRTP / IPsec**
+  - **SSL:** *[definition goes here]*
+  - **TLS:** *[definition goes here]*
+  - **HTTPS:** *[definition goes here]*
+  - **SSH:** *[definition goes here]*
+  - **S/MIME:** *[definition goes here]*
+  - **SRTP:** *[definition goes here]*
+  - **IPsec:** *[definition goes here]*
 - **Implementation:**
-  - **Key Strength / Cryptoperiod / Block Modes (ECB, CBC, CTR, GCM)**
-  - **Crypto Service Provider**
+  - **Key Strength:** *[definition goes here]*
+  - **Cryptoperiod:** *[definition goes here]*
+  - **Block Modes:** *[definition goes here]*
+    - **ECB:** *[definition goes here]*
+    - **CBC:** *[definition goes here]*
+    - **CTR:** *[definition goes here]*
+    - **GCM:** *[definition goes here]*
+  - **Crypto Service Provider** *[definition goes here]*
