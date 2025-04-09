@@ -1,6 +1,7 @@
 # CompTIA Security+ Info Sec 1 Vocab Sheet
 
-### Mod 1: Intro to Security
+## Mod 1: Intro to Security
+
  - `Security:`
  - `CIA TRIAD:`
     - `Confidentiality:`
@@ -16,7 +17,8 @@
     - `Misconfigurations:`
     - `Third-Party Risks:`
 
-### Mod 2: Threat Management and CyberSec Resources
+## Mod 2: Threat Management and CyberSec Resources
+
  - `Penetration Testing:`
  - `Vulnerability Scanning:`
  - `SIEM:`
@@ -24,7 +26,8 @@
  - `Threat Hunting:`
  - `Resources:`
 
-### Mod 3: Threats and Attacks on Endpoints
+## Mod 3: Threats and Attacks on Endpoints
+
  - `Malware Types by Behavior:`
     - `Ransomware/Imprison:`
     - `Worm/Launch:`
@@ -43,7 +46,8 @@
     - `Tainted Training Data:`
     - `Compromised Algorithms:`
 
-### Mod 4: Endpoint and Application Development Security
+## Mod 4: Endpoint and Application Development Security
+
  - `Threat Intelligence:`
     - `OSINT:`
     - `STIX/TAXII:`
@@ -63,7 +67,8 @@
     - `Static/Pre-Compile:`
     - `Dynamic/Runtime/Fuzzing:`
 
-### Mod 5: Mobile, Embedded, and Specialized Device Security
+## Mod 5: Mobile, Embedded, and Specialized Device Security
+
  - `Mobile Types:`
  - `Deployment:`
     - `BYOD:`
