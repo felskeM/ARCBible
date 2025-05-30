@@ -167,7 +167,7 @@ section.visible {
 }
 
 .collapsible.open {
-    max-height: 1000px;
+    max-height: none;
     margin-bottom: 20px;
 }
 

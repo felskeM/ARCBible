@@ -7,6 +7,7 @@
     <title>ARC Training Tutorial</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="TutorialGuide/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -59,11 +60,16 @@
             <h2>3. Entering AFM (American Floor Mats) Orders</h2>
             <div class="screenshot">
                 <ul>
-                    <li><strong>Open the PO:</strong> Open the email from the inbox and view the PDF in Adobe.<br/><img alt="[Insert Screenshot Here]" src="" /></li>
-                    <li><strong>Save:</strong> Save the PO to the 'AFM Orders' folder.<br/><img alt="[Insert Screenshot Here]" src="" /></li>
-                    <li><strong>Print:</strong> Print the PO to a non-label printer and delete the email if needed.<br/><img alt="[Insert Screenshot Here]" src="" /></li>
-                    <li><strong>Mark-Up:</strong> Add the shipping state, material/thickness, ship date, and N.S. number to the top right.<br/><img alt="[Insert Screenshot Here]" src="" /></li>
-                    <li><strong>Send:</strong> Email the marked-up file to arcorderparsin@pliteq.com.<br/><img alt="[Insert Screenshot Here]" src="" /></li>
+                    <li><strong>Open the PO:</strong> Open the email from the inbox and view the PDF in Adobe.<br/><img alt="[Insert Screenshot Here]" src="TutorialGuide/NewAFMOrder.PNG" /></li>
+                    <li><strong>Extract:</strong> Click the edit tab and highlight all the pages of the PO.<br/><img alt="[Insert Screenshot Here]" src="TutorialGuide/AFMEditExtract.PNG" /></li>
+                    <li><strong>Save:</strong> Right-click and press extract all files. Click on the AFM Purchase Orders folder for the extract destination.<br/><img src="TutorialGuide/ExtractSelection.PNG" alt="[Insert Screenshot Here]"></li>
+                    <li><strong>Print:</strong> Print the PO to a non-label printer and delete the email if needed.<br/><img alt="[Insert Screenshot Here]" src="TutorialGuide/AFMprintPO.png" /></li>
+                    <li><strong>Mark-Up:</strong> Add the shipping state, material/thickness, ship date, and N.S. number to the top right of the printed PO.<br/><img alt="[Insert Screenshot Here]" src="" /></li>
+                    <li><strong>Send:</strong> Email the PO file to arcorderparsin@pliteq.com with this format "Ship {customer expected ship date} from "{Either WI or AZ}".<br/><img alt="[Insert Screenshot Here]" src="TutorialGuide/EmailPars.png" /></li>
+                    <li><strong>Carrier Choice:</strong> Use our Pricing Master Roll Info excel sheet to determine whether or not the PO will need to be palleted or ship through UPS. Go to the dim calc page to determine the weights and dimensions. If each
+                        roll weighs less than 150 lbs and the total weight with all rolls is less than $500, then you can ship through UPS and write UPS on the bottom of the page. Otherwise, just write TBD on the bottom of the page. Write down the correct
+                        price with the same spreadsheet on the AFM Price Calc tab. All orders $150 or higher are also discounted 15% total.</li>
+                    <li><strong>NetSuite Check:</strong> Let's navigate to NetSuite and type in the PO number in the search bar. Write down our S reference number under the date you wrote on the PO. </li>
                 </ul>
             </div>
         </section>
