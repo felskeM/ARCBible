@@ -1,0 +1,49 @@
+<head>
+    <link rel="stylesheet" href="../content/styles.css">
+</head>
+
+<body>
+    <aside class="menu">
+        <nav class="sidebar">
+            <h1 class="site-header"><a href="../index.html"><span>ARC Bible</span></a></h1>
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <span>Contents</span>
+                    <ul class="menu-list">
+                        <li><a href="intro.html">1. Intro to ARC NetSuite</a></li>
+                        <li><a href="rfi.html">2. RFI Orders</a></li>
+                        <li><a href="afm.html">3. AFM Orders</a></li>
+                        <li><a href="other-orders.html">4. Other Customer Orders</a></li>
+                        <li><a href="tips.html">5. Tips & Tricks</a></li>
+                        <li><a href="misc.html">6. Misc Useful Info</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <section id="afm">
+        <h2>3. Entering AFM (American Floor Mats) Orders</h2>
+        <div class="screenshot">
+            <ol>
+                <li><strong>Open and extract the PO:</strong> Print the PO and view the PDF in Adobe and go to the edit tab. Extract the PDF as separate files to the AFM Orders folder.<br/><img src="TutorialGuide/AFMEditExtract.PNG" alt="" /></li>
+                <li><strong>Send:</strong> Email the individually extracted files to arcorderparsing@pliteq.com with the same subject and contents as the RFI format.<br/><img src="TutorialGuide/EmailPars.png" alt="" />
+                    <ul>
+                        <li>DocParser cannot create an SO from AFMs bundled POs, so you must extract the documents as separate files and send them individually to parsing.</li>
+                        <li>Also note that the ESD will always be the 3 business days.</li>
+                    </ul>
+                </li>
+                <li><strong>Mark-Up:</strong> Use the same mark up format as the RFI orders.<br/><img alt="" src="" /></li>
+                <li><strong>Carrier:</strong> Use the spreadsheet "Pricing & Master Roll Info" to determine UPS vs freight, calculate price & apply 15% discount if needed.
+                    <ul>
+                        <li>If the total weight of all rolls on one order is less than 500 lbs and/or one roll is less than 150 lbs, go with UPS and write UPS and the dimensions (weight and diameter) at the bottom of the PO. Otherwise write TBD and a carrier
+                            will be sent to pick it up once the warehouse fulfills the order.</li>
+                        <li>In addition you ust write the price next to the item which you can calculate from the spreadsheet. If the price is above $150, then use the 15% discounted price; otherwise, give the actual item price.</li>
+                    </ul>
+                </li>
+                <li></li>
+            </ol>
+        </div>
+    </section>
+    <script src="../content/script.js"></script>
+</body>

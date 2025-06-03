@@ -1,0 +1,53 @@
+<head>
+    <link rel="stylesheet" href="../content/styles.css">
+</head>
+
+<body>
+    <aside class="menu">
+        <nav class="sidebar">
+            <h1 class="site-header"><a href="../index.html"><span>ARC Bible</span></a></h1>
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <span>Contents</span>
+                    <ul class="menu-list">
+                        <li><a href="intro.html">1. Intro to ARC NetSuite</a></li>
+                        <li><a href="rfi.html">2. RFI Orders</a></li>
+                        <li><a href="afm.html">3. AFM Orders</a></li>
+                        <li><a href="other-orders.html">4. Other Customer Orders</a></li>
+                        <li><a href="tips.html">5. Tips & Tricks</a></li>
+                        <li><a href="misc.html">6. Misc Useful Info</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <section id="rfi">
+        <h2>2. Entering RFI (Flooring Inc.) Orders</h2>
+        <div class="screenshot">
+            <ol>
+                <li>From your inbox, save the POs to the RFI Purchase Orders folder. Then print the POs.<br/><img alt="" src="" /></li>
+                <li>Mark-up the printed document and send the file to parsing (arcorderparsin@pliteq.com). The contents of the email should say "Ship {ESD} from {WI or AZ}" and nothing else as we use the DocParser AI to create SOs in NetSuite from the POs.
+                    <br/><img alt="" src="" />
+                    <ul>
+                        <li>If using GMail, you'll have to edit the subject to "Emailing: Purchase Order_{PO#}"</li>
+                        <li>If you have setup an IMAP configuration from Gmail to Outlook, just go to file explorer and right-click to send file as an attachment.</li>
+                    </ul>
+                </li>
+                <li>Mark-up info: In the top right of the doucment, write in order (from top to bottom): thickness and color first, ESD below, finally the sales order number last.
+                    <ul>
+                        <li>The ESD can be determined as follows: Next-Day = next business day, Quick Ship = next 3 business days, no comment = next 5 business days.</li>
+                    </ul><br/><img alt="" src="" />
+                </li>
+                <li>RFI gives us their preferred shipping method--Usually being FedEx (if within dimension limits), R&L, SAIA, or ABF.
+                    <ul>
+                        <li>For FedEx orders, you will need to login to our FedEx account and create a new shipment.</li>
+                        <li>For all carriers, we have a BOL template that you can overwrite and create 2 hard copies of. You will also need to put the address and SO# on our skid tag template and print out one. The warehouse will let you know if they ever
+                            need more skid tags.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <script src="../content/script.js"></script>
+</body>
