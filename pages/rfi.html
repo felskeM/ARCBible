@@ -35,25 +35,29 @@
             <h2>2. Entering RFI (Flooring Inc.) Orders</h2>
             <div class="screenshot">
                 <ol>
-                    <li>From your inbox, save the POs to the RFI Purchase Orders folder. Then print the POs.<br/><img alt="" src="" /></li>
+                    <li>From your inbox, save the POs to the RFI Purchase Orders folder. Then print the POs.</li>
                     <li>Mark-up the printed document and send the file to parsing (arcorderparsin@pliteq.com). The contents of the email should say "Ship {ESD} from {WI or AZ}" and nothing else as we use the DocParser AI to create SOs in NetSuite from the
                         POs.
-                        <br/><img alt="" src="" />
+                        <ul>
+                            <li>ESD = Estimated Shipping Date. Next-Day = next business day, Quick Ship = next 3 business days, no comment = next 5 business days.</li>
+                            <li>WI = Wisconsin, AZ = Arizona, which are our two warehouses.</li>
+                        </ul>
                         <ul>
                             <li>If using GMail, you'll have to edit the subject to "Emailing: Purchase Order_{PO#}"</li>
                             <li>If you have setup an IMAP configuration from Gmail to Outlook, just go to file explorer and right-click to send file as an attachment.</li>
                         </ul>
+                        <br/><img alt="" src="../content/images/RFIPars.PNG" />
                     </li>
                     <li>Mark-up info: In the top right of the doucment, write in order (from top to bottom): thickness and color first, ESD below, finally the sales order number last.
                         <ul>
                             <li>The ESD can be determined as follows: Next-Day = next business day, Quick Ship = next 3 business days, no comment = next 5 business days.</li>
-                        </ul><br/><img alt="" src="" />
+                        </ul><br/><img alt="ADD IMAGE" src="../content/images/RFIMarkup.PNG" />
                     </li>
-                    <li>RFI gives us their preferred shipping method--Usually being FedEx (if within dimension limits), R&L, SAIA, or ABF.
+                    <li>RFI gives us their preferred shipping method--Usually being FedEx (if within dimension limits of 150 lbs per package and less than 500 lbs total), R&L, SAIA, or ABF.
                         <ul>
-                            <li>For FedEx orders, you will need to login to our FedEx account and create a new shipment.</li>
-                            <li>For all carriers, we have a BOL template that you can overwrite and create 2 hard copies of. You will also need to put the address and SO# on our skid tag template and print out one. The warehouse will let you know if they
-                                ever need more skid tags.</li>
+                            <li>For FedEx (courier) orders, you will need to login to our FedEx account and create a new shipment.</li>
+                            <li>For all LTL carriers, we have a BOL template that you can overwrite and create 2 hard copies of. You will also need to put the shipping address and our SO# on our skid tag template and print out one. The warehouse will let
+                                you know if they ever need more skid tags.</li>
                         </ul>
                     </li>
                 </ol>
